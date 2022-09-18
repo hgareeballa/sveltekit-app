@@ -2,7 +2,7 @@
   import FooterPage from "./footer/+page.svelte";
   import { page } from "$app/stores";
   $: current = $page.url.pathname;
-  $: console.log("page", $page.url.pathname, "--", $page.url);
+  $: console.log("page", $page.url.pathname);
 </script>
 
 <div class="container">

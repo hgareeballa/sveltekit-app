@@ -11,7 +11,7 @@ export async function first({ event, resolve }) {
 
 export async function second({ event, resolve }) {
   console.log("Second Handel hooks");
-  console.log("SEssion ", event.cookies.get("sessionid"));
+  //console.log("SEssion ", event.cookies.get("sessionid"));
 
   const response = await resolve(event);
   response.headers.set("x-custom-header", "potato");
